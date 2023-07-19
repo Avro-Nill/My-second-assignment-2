@@ -61,7 +61,6 @@
     gap: 20px;
     justify-content: space-around;
     align-items: center;
-    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 .banner-header-title{
     color: #0B0223;
@@ -70,14 +69,16 @@
 }
 .banner-header-title span{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 5.8rem;
     font-weight: 800;
 }
 .banner-title{
     margin-left:180px;
+    background-image: url(../images/Group\ 14.png);
+    background-size:100%;
 }
 .banner-title li{
     list-style: none;
@@ -206,7 +207,72 @@
 }
 /* option section end */
 /* main section end */
-
+/* footer start */
+.footer{
+    background-color: #0B0223;
+    max-width: 100%;
+    height: 90vh;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.footer-logo > .logo{
+    color: #fff;
+}
+.footer-nav ul{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    /* gap: 60px; */
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding-top: 30px;
+}
+.footer-nav a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+.footer-icons i{
+    padding: 10px 30px;
+    cursor: pointer;
+}
+.fa-facebook{
+    color: rgb(3, 128, 230);
+    font-size: 25px;
+}
+.fa-instagram{
+    color: #FF42A5;
+    font-size: 25px;
+}
+.fa-youtube{
+    color: red;
+    font-size: 25px;
+}
+.terms-and-condition ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* gap: 60px; */
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+.terms-and-condition a{
+    text-decoration: none;
+    color: #FFF;
+}
+/* footer end */
 
 
 
@@ -260,6 +326,13 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
+    .footer{
+        /* width:100%; */
+    }
+    .footer-nav ul{
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
 }
 /* responsive for medium devices */
 @media screen  and (min-width:576px) and (max-width:992px) {
@@ -295,5 +368,9 @@
             display: grid;
             grid-template-columns: repeat(2,1fr);
             align-items: center;
+        }
+        .footer-nav ul{
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
         }
 }
