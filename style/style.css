@@ -23,7 +23,7 @@
     font-size: 2.8rem;
     font-weight: 800;
 }
-.logo h3 span{
+.pink{
     color:#F948B2;
 }
 .nav-items{
@@ -155,8 +155,56 @@
     padding-left: 250px;
     width: auto;
 }
-
-
+/* play games section start */
+.play-games-section{
+    display: flex;
+    gap: 150px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.play-games-header{
+    font-size: 3rem;
+}
+.play-img{
+    margin-top: 60px;
+}
+.play-img > img-1{
+    width: 50%;
+}
+.img-1{
+    position: relative;
+}
+.img-2{
+    position: relative;
+    top: -300px;
+    left: -50px;
+}
+/* play agmes section end */
+/* option section start */
+.options{
+    max-width: 90%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 150px;
+}
+.option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    min-height: 80px;
+    background-color: #FFF;
+}
+.option:hover{
+    color: #F948B2;
+    border: 1px solid #F948B2;
+    border-radius: 50px;
+    box-shadow:-2px -2px 5px black;
+}
+/* option section end */
 /* main section end */
 
 
@@ -197,6 +245,21 @@
         text-align: center;
         margin-left: 130px;
     }
+.play-games-section{
+    flex-direction: column-reverse;
+    }
+    .play-img img-1{
+        width:auto;
+    }
+    .play-games-header{
+        margin-top: 0px;
+        margin-left: 10px;
+        text-align: center;
+    }
+    .options{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 /* responsive for medium devices */
 @media screen  and (min-width:576px) and (max-width:992px) {
@@ -206,12 +269,14 @@
     }
     .banner{
         flex-direction: column-reverse;
+        align-items: center;
     }
 .banner-title{
-    padding-left: 10px;
+    padding-left: 0px;
 }
     .we-are-gamer-section{
         flex-direction: column;
+        align-items: center;
     }
     .gamers-img {
         width: 80%;
@@ -220,6 +285,15 @@
     .about-gamers{
         padding-right: 0px;
         text-align: center;
-        margin-left: 170px;
+        /* margin-left: 150px; */
     }
+    .play-games-section{
+        flex-direction: column-reverse;
+        align-items: center;
+        }
+        .options{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+        }
 }
