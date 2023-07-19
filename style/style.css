@@ -116,6 +116,34 @@
 }
 /* banner section end */
 /* main section start */
+.v-container{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.v-img{
+    position: relative;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.play{
+    position: relative;
+    top: -200px;
+    left: 120px;
+    display: none;
+}
+.play button{
+    color: #FF42A5;
+    cursor: pointer;
+}
+.v-img:hover .play{
+    display: block;
+}
+.v-img:hover .v-img img{
+    opacity: 0.5;
+}
+
 .we-are-gamer-section{
     display: flex;
     gap: 50px;
@@ -333,6 +361,9 @@
         grid-template-columns: repeat(3,1fr);
         gap: 20px;
     }
+    .v-container{
+        flex-direction: column;
+    }
 }
 /* responsive for medium devices */
 @media screen  and (min-width:576px) and (max-width:992px) {
@@ -372,5 +403,8 @@
         .footer-nav ul{
             grid-template-columns: repeat(3,1fr);
             gap: 20px;
+        }
+        .v-container{
+            flex-direction: column;
         }
 }
